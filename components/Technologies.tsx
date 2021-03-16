@@ -17,7 +17,6 @@ const useStyles = makeStyles((theme: Theme) =>
       transform: 'translate(-50%)',
       padding: '20px',
       textAlign: 'center',
-      marginTop: '70px',
     },
     spaceTop: {
       marginTop: '100px',
