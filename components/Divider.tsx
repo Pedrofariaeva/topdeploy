@@ -40,7 +40,7 @@ const Divider = () => {
               src="/images/react.png"
               alt="react"
               width={135}
-              height={60}
+              height={78}
             />
           </Link>
         </Grid>
