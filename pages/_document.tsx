@@ -5,13 +5,13 @@ import { ServerStyleSheets } from '@material-ui/core/styles';
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en" style={{ scrollBehavior: 'smooth' }}>
+      <Html lang="en">
         <Head>
           {/* PWA primary color */}
 
           <meta name="theme-color" />
-          <meta name="description" content="Acharya" />
-          <link rel="apple-touch-icon" href="/Acharya orginal.png" />
+          <meta name="description" content="Top Deploy Academy" />
+          <link rel="apple-touch-icon" href="/top.png" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Poppins"
