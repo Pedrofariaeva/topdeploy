@@ -8,6 +8,7 @@ import {
   Typography,
   Divider,
   IconButton,
+  Box,
 } from '@material-ui/core';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import Image from 'next/image';
@@ -37,7 +38,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     toolBar: {
       backgroundColor: '#2A2A2A',
-      height: '150px',
+      height: '120px',
     },
     toolBar2: {
       backgroundColor: '#2A2A2A',
@@ -47,6 +48,13 @@ const useStyles = makeStyles((theme: Theme) =>
       width: '80%',
       marginLeft: '50%',
       transform: 'translate(-50%)',
+    },
+    box: {
+      backgroundColor: '#2A2A2A',
+    },
+    iefp: {
+      padding: '10px',
+      marginLeft: '10px',
     },
   })
 );
@@ -61,7 +69,7 @@ const Footer = () => {
           <LocationOnIcon />
           <Typography variant="h6" className={classes.text}>
             ENTER Altice Labs Rua de Campolide nº28 1070-036 Lisboa
-          </Typography>{' '}
+          </Typography>
           <LocationOnIcon />
           <div className={classes.local}>
             <Typography variant="h6" className={` ${classes.text} `}>
@@ -76,7 +84,7 @@ const Footer = () => {
               width={200}
               height={10}
             />
-            <div>
+            <div className={classes.iefp}>
               <Image
                 src="/images/jobDeploy.png"
                 alt="jobDeploy logo"
@@ -92,7 +100,9 @@ const Footer = () => {
             </div>
           </div>
         </Toolbar>
-        <Divider light variant="middle" className={classes.divider} />
+        <Box className={classes.box}>
+          <Divider light variant="middle" className={classes.divider} />
+        </Box>
 
         <Toolbar className={classes.toolBar2}>
           <Typography variant="h6" className={classes.local}>
