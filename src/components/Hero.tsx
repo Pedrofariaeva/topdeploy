@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     layer: {
       backgroundColor: '#314368',
-      opacity: '0.8',
+      opacity: '0.3',
       position: 'absolute',
       top: 0,
       left: 0,

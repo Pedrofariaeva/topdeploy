@@ -51,10 +51,16 @@ const useStyles = makeStyles((theme: Theme) =>
     box: {
       backgroundColor: '#2A2A2A',
     },
-    iefp: {
+    logos: {
       padding: '10px',
-      marginLeft: '10px',
       textAlign: 'center',
+    },
+    element: {
+      display: 'inline-block',
+      margin: theme.spacing(1),
+      [theme.breakpoints.down('xs')]: {
+        margin: '0',
+      },
     },
     socialMedia: {
       '&:hover': {
@@ -85,24 +91,28 @@ const Footer = () => {
           </div>
           <div>
             <Image
-              src="/images/top.png"
+              src="/images/footerLogos/top.png"
               alt="top logo"
               width={200}
               height={10}
             />
-            <div className={classes.iefp}>
-              <Image
-                src="/images/jobDeploy.png"
-                alt="jobDeploy logo"
-                width={100}
-                height={15}
-              />
-              <Image
-                src="/images/iefp.png"
-                alt="iefp logo"
-                width={30}
-                height={28}
-              />
+            <div className={classes.logos}>
+              <div className={classes.element}>
+                <Image
+                  src="/images/footerLogos/jobDeploy.png"
+                  alt="jobDeploy logo"
+                  width={100}
+                  height={15}
+                />
+              </div>
+              <div className={classes.element}>
+                <Image
+                  src="/images/footerLogos/iefp.png"
+                  alt="iefp logo"
+                  width={30}
+                  height={28}
+                />
+              </div>
             </div>
           </div>
         </Toolbar>

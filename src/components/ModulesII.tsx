@@ -140,7 +140,7 @@ const ModulesII = () => {
     <>
       <div className={classes.outer}>
         <Image
-          src="/images/background-3.svg"
+          src="/images/modulesBackground/background-3.svg"
           alt="background-3"
           layout="fill"
           objectFit="cover"
@@ -167,7 +167,7 @@ const ModulesII = () => {
 
       <div className={classes.outer}>
         <Image
-          src="/images/background-4.svg"
+          src="/images/modulesBackground/background-4.svg"
           alt="background-4"
           layout="fill"
           objectFit="cover"

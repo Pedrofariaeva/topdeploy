@@ -36,7 +36,7 @@ const Divider = () => {
             rel="noopener"
           >
             <Image
-              src="/images/js.png"
+              src="/images/dividerLogos/js.png"
               alt="javascript"
               width={50}
               height={50}
@@ -46,7 +46,7 @@ const Divider = () => {
         <Grid item xs={4}>
           <Link href="https://reactjs.org/" target="_blank" rel="noopener">
             <Image
-              src="/images/react.png"
+              src="/images/dividerLogos/react.png"
               alt="react"
               width={135}
               height={43}
@@ -60,7 +60,7 @@ const Divider = () => {
             rel="noopener"
           >
             <Image
-              src="/images/ts.png"
+              src="/images/dividerLogos/ts.png"
               alt="typescript"
               width={50}
               height={50}
