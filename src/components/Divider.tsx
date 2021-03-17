@@ -7,8 +7,13 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       backgroundColor: '#314368',
       height: '80px',
+      width: '100%',
       textAlign: 'center',
       position: 'relative',
+    },
+    logo: {
+      padding: '10px',
+      height: '80px',
     },
   })
 );
@@ -19,38 +24,46 @@ const Divider = () => {
     <div className={classes.root}>
       <Grid
         container
-        spacing={3}
-        alignContent="flex-start"
-        alignItems="flex-start"
-        justify="flex-start"
+        justify="center"
+        alignItems="center"
+        alignContent="center"
+        className={classes.logo}
       >
         <Grid item xs={4}>
-          <Link href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
+          <Link
+            href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+            target="_blank"
+            rel="noopener"
+          >
             <Image
               src="/images/js.png"
               alt="javascript"
-              width={60}
-              height={60}
+              width={50}
+              height={50}
             />
           </Link>
         </Grid>
         <Grid item xs={4}>
-          <Link href="https://reactjs.org/">
+          <Link href="https://reactjs.org/" target="_blank" rel="noopener">
             <Image
               src="/images/react.png"
               alt="react"
               width={135}
-              height={78}
+              height={43}
             />
           </Link>
         </Grid>
         <Grid item xs={4}>
-          <Link href="https://www.typescriptlang.org/">
+          <Link
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            rel="noopener"
+          >
             <Image
               src="/images/ts.png"
               alt="typescript"
-              width={60}
-              height={60}
+              width={50}
+              height={50}
             />
           </Link>
         </Grid>

@@ -1,4 +1,4 @@
-export interface modulesProps {
+export interface ModulesProps {
   title: string;
   objectivo1: string;
   objectivo2: string;

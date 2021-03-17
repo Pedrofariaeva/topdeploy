@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       flexGrow: 1,
-      marginTop: '100px',
     },
     appBar: {
       bottom: 0,
@@ -55,6 +54,13 @@ const useStyles = makeStyles((theme: Theme) =>
     iefp: {
       padding: '10px',
       marginLeft: '10px',
+      textAlign: 'center',
+    },
+    socialMedia: {
+      '&:hover': {
+        backgroundColor: 'transparent',
+        transform: 'scale(1.07)',
+      },
     },
   })
 );
@@ -114,6 +120,7 @@ const Footer = () => {
             href="https://www.facebook.com/TrackonPerformance"
             target="_blank"
             rel="noopener"
+            className={classes.socialMedia}
           >
             <FacebookIcon />
           </IconButton>
@@ -123,6 +130,7 @@ const Footer = () => {
             href="https://www.instagram.com/track_on_performance/"
             target="_blank"
             rel="noopener"
+            className={classes.socialMedia}
           >
             <InstagramIcon />
           </IconButton>
@@ -132,6 +140,7 @@ const Footer = () => {
             href="https://www.linkedin.com/company/track-on-performance"
             target="_blank"
             rel="noopener"
+            className={classes.socialMedia}
           >
             <LinkedInIcon />
           </IconButton>
@@ -141,6 +150,7 @@ const Footer = () => {
             href="https://twitter.com/tronperformance"
             target="_blank"
             rel="noopener"
+            className={classes.socialMedia}
           >
             <TwitterIcon />
           </IconButton>

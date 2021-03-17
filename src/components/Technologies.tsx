@@ -26,12 +26,13 @@ const useStyles = makeStyles((theme: Theme) =>
       marginTop: '50px',
     },
     info: {
-      marginTop: '150px',
+      marginTop: '120px',
       marginLeft: '50%',
       transform: 'translate(-50%)',
       width: '70%',
       [theme.breakpoints.down('sm')]: {
         width: '80%',
+        marginTop: '50px',
       },
     },
     info2: {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from '@material-ui/core';
-import { theme } from '../theme/theme';
+import { theme } from '../src/theme/theme';
 import '../public/global.css';
 function MyApp({ Component, pageProps }: AppProps) {
   return (

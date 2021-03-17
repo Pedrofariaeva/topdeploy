@@ -7,6 +7,7 @@ import {
   Typography,
   Paper,
   Grid,
+  Link,
 } from '@material-ui/core';
 import Image from 'next/image';
 const useStyles = makeStyles((theme: Theme) =>
@@ -17,21 +18,33 @@ const useStyles = makeStyles((theme: Theme) =>
       overflow: 'hidden',
       zIndex: -1,
     },
+    layer: {
+      backgroundColor: '#314368',
+      opacity: '0.8',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+    },
     container: {
       position: 'absolute',
       top: '50%',
       left: '50%',
-      transform: 'translate(-50%, -60%)',
+      transform: 'translate(-50%, -50%)',
       padding: '20px',
     },
     paper: {
       backgroundColor: '#314368',
       padding: '10px',
-      marginTop: '20px',
+      marginTop: '10px',
       textAlign: 'center',
       width: 'fit-content',
       marginLeft: '50%',
       transform: 'translate(-50%)',
+    },
+    paperLink: {
+      cursor: 'pointer',
     },
     center: {
       textAlign: 'center',
@@ -40,13 +53,13 @@ const useStyles = makeStyles((theme: Theme) =>
       marginTop: '40px',
       [theme.breakpoints.down('sm')]: {
         width: '80%',
-        marginTop: '20px',
+        marginTop: '10px',
       },
     },
 
     mail: {
       [theme.breakpoints.down('sm')]: {
-        marginTop: '50px',
+        marginTop: '5px',
       },
     },
   })
@@ -65,6 +78,7 @@ const Hero = () => {
           quality={100}
         />
       </div>
+      <div className={classes.layer}></div>
 
       <Container maxWidth="md" className={classes.container}>
         <Grid container direction="row" justify="center" alignItems="center">
@@ -112,9 +126,15 @@ const Hero = () => {
               Inscrições
             </Typography>
             <Paper className={classes.paper}>
-              <Typography variant="h4" color="secondary">
-                education@jobdeploy.com
-              </Typography>
+              <Link href="mailto:education@jobdeploy.com" underline="none">
+                <Typography
+                  variant="h4"
+                  color="secondary"
+                  className={classes.paperLink}
+                >
+                  education@jobdeploy.com
+                </Typography>
+              </Link>
             </Paper>
           </Grid>
         </Grid>
