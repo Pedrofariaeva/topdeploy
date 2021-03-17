@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme: Theme) =>
       display: 'inline-block',
       margin: theme.spacing(1),
       [theme.breakpoints.down('xs')]: {
-        margin: '0',
+        margin: '2px',
       },
     },
     socialMedia: {
