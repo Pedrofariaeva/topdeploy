@@ -85,7 +85,7 @@ const Footer = () => {
           <LocationOnIcon />
           <div className={classes.local}>
             <Typography variant="h6" className={` ${classes.text} `}>
-              CEI - Centro de Empresas Inovadoras Av. do Empresário 1, room 1.01
+              CEI - Centro de Empresas Inovadoras Av. do Empresário 1, room 2.08
               6000-763 Castelo Branco
             </Typography>
           </div>

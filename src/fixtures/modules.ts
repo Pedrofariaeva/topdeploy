@@ -2,7 +2,7 @@ import { modulesProps } from '../interfaces/index';
 
 export const modulesI: modulesProps[] = [
   {
-    title: 'Javascript - Fundamentos Nivel I (25h)',
+    title: 'Javascript - Fundamentos Nivel I (50h)',
     objectivo1:
       'Introdução às linguagens de programação em geral e à lógica de programação',
     objectivo2: 'Conceber programas básicos de animações e paginas de internet',
@@ -11,7 +11,7 @@ export const modulesI: modulesProps[] = [
     float: 'left',
   },
   {
-    title: 'Javascript - Fundamentos Nivel II (25h)',
+    title: 'Javascript - Fundamentos Nivel II (50h)',
     objectivo1:
       'Conceber programas de animações, jogos e paginas de internet mais interativas',
     objectivo2:
@@ -49,7 +49,7 @@ export const modulesII: modulesProps[] = [
     float: 'left',
   },
   {
-    title: 'Typescript em React, Node e GraphQL - Avançada Nível II (50h)',
+    title: 'Typescript em React, Nest.Js e Rest - Avançada Nível II (100h)',
     objectivo1:
       'Aprender a criar uma aplicações em React através de Typescript',
     objectivo2:
@@ -72,7 +72,7 @@ export const modulesII2: modulesProps[] = [
     title: 'FrontEnd, CSS em React - Avançada Nível II (50h)',
     objectivo1:
       'Desenvolvimento avançado de Webservices e aplicação de componentes dinâmicas utilizando os conhecimentos de JS/React e CSSs de modo a integrar vários conteúdos de usabilidade fundamentais ao UX dos programas.',
-    objectivo2: 'Recurso a ferramentas de frameworks como Storybook',
+    objectivo2: 'Recurso a ferramentas de frameworks como Storybook, Exercicio Final',
     float: 'right',
   },
 ];

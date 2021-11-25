@@ -136,7 +136,7 @@ const Modules = () => {
 
         <Container maxWidth="md" className={classes.container}>
           <Typography variant="h1" color="primary" className={classes.title}>
-            MÓDULO I - 150h
+            MÓDULO I - 200h
           </Typography>
           <Grid
             container

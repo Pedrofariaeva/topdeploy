@@ -150,7 +150,7 @@ const ModulesII = () => {
 
         <Container maxWidth="md" className={classes.container}>
           <Typography variant="h1" color="secondary" className={classes.title}>
-            MÓDULO II - 200h
+            MÓDULO II - 250h
           </Typography>
           <Grid
             container
